@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .democlass{color:red;}
+    </style>
+    <body>
+        <h1>The Document Object</h1>
+        <h2>The createAttribute() and setAttributeNode() Methods</h2>
+        <p>Click "Add" to create a class Attribute and add it to first h1 element.</p>
+        <button onclick ="myFunction()">Add</button>
+        <script>
+            function myFunction(){
+                //Create a class attribute:
+                const att = document.createAttribute('Class');
+                //Set a value of the class attribute
+                att.value="democlass";
+                //Add the class Attribute to the first h1;
+                document.getElementsByTagName('h1')
+                [0].setAttributeNode(att);
+            }
+        </script>
+        <ul id="mylist">
+            <li>COFFEE</li>
+            <li>MILK</li>
+            <li>Tea</li>
+        </ul>
+        <ul id="mylist1">
+            <li>Water</li>
+            <li>Juice</li>
+            <li>VODKA</li>
+        </ul>
+        <p>Click the button to move items from one list to another.</p>
+        <button onclick="myFunction()">TRY IT</button>
+        <script>
+            function myFunction(){
+                const node=document.getElementById("mylist1").lastElementChild;
+                const list=document.getElementById("mylist");
+                list.insertBefore(node,list.children[0]);
+            }
+        </script>
+
+    </body>
+</html>
