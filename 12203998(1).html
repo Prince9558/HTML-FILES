@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>EVENT</title>
+    </head>
+    <body>
+        <button onclick="myFunction()">Wish</button>
+
+         <p id="demo"></p>
+
+        <script>
+        function myFunction() {
+  let text;
+  let person = prompt("Enter first name:");
+  let person1=prompt("Enter middle name:")
+  let person2=prompt("Enter last name:")
+  
+    text = "Good Morning " + person + person1 + person2 + "!";
+  
+  document.getElementById("demo").innerHTML = text;
+}
+        </script>
+    </body>
+</html>
