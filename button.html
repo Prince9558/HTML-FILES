@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>submit button</title>
+    </head>
+    <body>
+        <label for="a"><b>NAME:</b></label>
+        <input type="text" id="a">
+        <br>
+        <br>
+        <label for="b"><b>PASSWORD:</b></label>
+        <input type="password" id="b">
+        <br>
+        <br>
+        <label for="c"><b>EMAIL ID:</b></label>
+        <input type="email" id="c">
+        <br>
+        <br>
+        <label for="d"><b>CONTACT NUMBER:</b></label>
+        <input type="telephone" id="d">
+        
+        <br>
+        <br>
+        <button type="button" onclick="sashank()">CLICK ME</button>
+        <script>
+            function prince()
+            {
+                alert("kaise hai sir/madam")
+            }
+            function gangster()
+            {
+                var a=prompt("Enter number")
+                document.write("The value entered is"+a);
+                document.write("<br>")
+                
+                if (a%2==0)
+                {
+                    document.write("The number you have given is even")
+
+                }
+                else
+                {
+                    document.write("the number you have given is odd")
+                }
+            }
+            function sashank()
+            {
+                var a=confirm("Do you want to confirm ?");
+                    if (a==true){
+                        document.write("User wants to continue");
+                        return true;
+                    }   
+                    else{
+                        document.write("User doesn't want to continue");
+                        return false
+                    } 
+            }
+        </script>
+    </body>
+</html>
