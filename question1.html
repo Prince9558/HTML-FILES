@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url("https://blog.prezi.com/wp-content/uploads/2019/03/jason-leung-479251-unsplash.jpg");
+            }
+            h4{
+                color:red;
+                font-size: 20px;
+            }
+            h5{
+                color:maroon;
+                font-size:18px;
+            }
+            body{background-color: grey;
+                 border:2px solid black;
+            }
+            form{
+                background-color: lightslategrey;
+                border:4px solid black;
+            }
+        </style>
+        <title>Label Type</title>
+    </head>
+    <body>
+        
+        <form>
+            <p><cemter><b>CREDIT CARD</b></cemter></p>
+            <input type="radio" id="f1">
+            <label for ="f1">Visa</label>
+            <input type ="radio" id="f2">
+            <label for ="f2">Diners</label>
+            <br>
+            <br>
+            <label for ="f3">Number</label>
+            <input type="text" id="f3">
+            <br>
+            <br>
+            <label for ="f4">Name</label>
+            <input type="password" id="f4">
+            <br>
+            <br>
+            <label for="f13"></label>
+            <input type="submit" id="f13">
+            <label for="f5"></label>
+            <input type="Reset" id="f5">
+            <pre><label for="a">Which language you like most:           </label>
+                <select id="a">
+                    <option value="b">English</option>
+                    <option value="b">Hindi</option>
+                    <option value="b">Bhojpuri</option>
+                    <option value="b">Punjabi</option>
+                    <option value="b">None of these</option>
+
+                </select>
+                <script>
+                    const a = parseFloat(prompt("Enter first number:-"))
+                    const b = parseFloat(prompt("Enter second number:-"))
+                    const c = parseFloat(prompt("Enter third number:-"))
+                    let maxi=Math.max(a,b,c);
+                    let mini=Math.min(a,b,c);
+                    document.write("<br>");
+                    document.write("<b>Maximum number=</b>",maxi);
+                    document.write("<br>");
+                    document.write("<b>Minimum number=</b>",mini);
+
+
+                </script>
+
+
+        </form>
+    </body>
+</html>
